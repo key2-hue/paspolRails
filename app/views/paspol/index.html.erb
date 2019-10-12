@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-image">
+        <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-pc@2x.png") %>
+      </div> 
+      <div class="header-none">
+        <ul class="header-category">
+          <li><%= link_to("TOP", "https://pas-pol.jp/", class: "header-list") %></li>
+          <li><%= link_to("PRODUCT", "https://pas-pol.jp/products/", class: "header-list") %></li>
+          <li><%= link_to("ABOUT", "https://pas-pol.jp/about/", class: "header-list") %></li>
+          <li><%= link_to("NEWS", "https://pas-pol.jp/news/", class: "header-list") %></li>
+          <li><%= link_to("CONTACT", "https://pas-pol.jp/contact/", class: "header-list") %></li>
+        </ul>
+      </div>
+      <div class="header-show">
+        <p>MENU</p>
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <section class="main">
+      <div class="background">
+        <!-- <ul class="slider">
+          <li><img src="https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_13-0x0.jpg"></li>
+          <li><img src="https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_2-0x0.jpg"></li>
+        </ul>
+      </div> -->
+      <div class="brand">
+        <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-sp@2x.png", class:"brand-first")%>
+        <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/mainVisual-arrow@2x.png", class:"brand-second")%>
+      </div>
+    </section>
+    <section class="concept">
+      <div class="journey">
+        <h2>旅に出よう。</h2>
+        <p>僕たちが作りたいのは<br />持っているだけで旅に出たくなるモノ。<br />
+        持っているだけでわくわくするモノ。</p>
+        <p>それは新しい時代の “パスポート”<br />僕たちが作るものは、<br />
+          そんな存在でありたい。</p>
+        <p>そして、人と人が繋がる<br />こんな時代だからこそ、<br />
+          僕たちは、みんなでひとつのモノを<br />作ることを追求したい。</p>
+        <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/concept-siteLogo@2x.png")%>
+        <p>それは、自分と世界を繋げる<br />旅のものづくりブランド</p>
+      </div>
+    </section>
+    <section class="product">
+      <div class="product-header">
+        <div class="product-left">
+          <p>PRODUCT</p>
+          <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/sectionTitle-underLine@2x.png") %>
+        </div>
+        <div class="product-right">
+          <p>MORE<span class="right-arrow">></span></p>
+        </div>
+      </div>
+      <div class="product-main">
+        <div class="book-one">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/05/fes001t.png")%>
+          <p>The World Festival Guide -海外の音楽フェス完全ガイド-</p>
+        </div>
+        <div class="book-two">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/11/banner_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB21.png")%>
+          <p>この世界で死ぬまでにしたいこと2000</p>
+        </div>
+        <div class="book-three">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/09/365%E6%97%A5%E6%9C%AC%E3%82%AB%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%BC_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB1.png")%>
+          <p>365日 日本一周 絶景日めくりカレンダー</p>
+        </div>
+        <div class="book-four">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/05/passportnotebook-thumb11.png")%>
+          <p>PASSPORT NOTEBOOK series</p>
+        </div>
+        <div class="book-five">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/02/englishbook-thumb11.png")%>
+          <p>ひとり旅英会話BOOK</p>
+        </div>
+        <div class="book-six">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2016/12/212465b615e458e672a9e0a1cbb1acf1.png")%>
+          <p>日本の絶景ポストカード</p>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news-header">
+        <div class="news-left">
+          <p>NEWS</p>     
+          <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/sectionTitle-underLine@2x.png")%>
+        </div>
+        <div class="news-right">
+          <p>MORE<span class="right-arrow">></span></p>
+        </div>
+      </div>
+      <div class="news-main">
+        <div class="news-one">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/09/%E3%82%A2%E3%83%B3%E3%82%B1%E3%83%BC%E3%83%88%E3%82%A2%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81.jpg")%>
+          <div class="detail-one">
+            <h2>新書籍「僕が旅人になった日」のアンケートにご協力ください！</h2>
+            <p>2019.9.15 </p>
+            <p>いつの間にか夜は肌寒くなってきて、もう夏も終わったんだな〜と実感しております。
+              こんにちは、TABIPPOのROY（roy_world81）です。7月まで「#旅とわたし」というテーマで
+              みなさまの旅のエッセイを募集していました。（詳しくはこちら）
+              約4,300件の応募の中から掲載者が確定し、順調に書籍の制作に向けて動いております。
+              ご投稿していただいたみなさま、改めてありがとうございます。
+              そんな旅人みんなで作る書籍「僕が旅人になった日」はエッセイだけではなく、
+              未来の旅人が旅に出たくなるようなコンテ...</p>
+          </div>
+        </div>
+        <div class="news-two">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/08/%E5%86%99%E7%9C%9F%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.jpg")%>
+          <div class="detail-two">
+            <h2>新書籍「旅人になった日」に掲載される絶景の写真を大募集！</h2>
+            <p>2019.8.2</p>
+            <p>長い梅雨もようやく明け、いよいよ夏の訪れを感じています。こんにちは、TABIPPOのロイ（roy_world81）です。
+                先日まで「#旅とわたし」というテーマでみなさまの旅のエッセイを募集していました。（詳しくはこちら）   
+                約4,300件とたくさんの投稿があり、全て読ませていただきました。派手な出来事で人生が変わった方もいましたし、
+                日常の些細な気付きで考えが変わった、日々の大切に気づいた方もいました。中にはTABIPPOの本を見て人生が変わったと
+                いう方もいらっしゃり、いろんな想いでみなさまのnot...</p>
+          </div>
+        </div>
+        <div class="news-three">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/07/pickup3_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99-1.jpg")%>
+          <div class="detail-three">
+            <h2>noteコラボ企画のお題「#旅とわたし」の投稿が3000件突破！！</h2>
+            <p>2019.7.6</p>
+            <p>noteとコラボして制作をしている旅のエッセイ本「僕が旅人になった日」。たくさんのご応募があり、3000件を突破しました！
+              とっても好評のため、募集期間が7/12(金)に延長されたので、まだまだ募集をしています。
+              この中から、もっと多くの人に読んでほしい！と思ったエッセイを本にします。みなさんのエッセイを読んでいると、旅の形って
+              ほんと様々だなあというのを思わせてくれます。素敵な文章があふれる中、私がいいなと思ったエッセイをご紹介します。
+              おすすめの「#旅とわたし」旅って新しいことの発見だけでは...</p>
+          </div>
+        </div>
+        <div class="news-four">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/06/%E5%83%95%E3%81%8B%E3%82%99%E6%97%85%E4%BA%BA%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E6%97%A5_new.jpg")%>
+          <div class="detail-four">
+            <h2>noteコラボ企画「#旅とわたし」の募集期間を7/12(金)に延長します！</h2>
+            <p>2019.6.24</p>
+            <p>noteとコラボして制作をしている旅のエッセイ本「僕が旅人になった日」。現在みなさまからエッセイの募集をしています。
+              素敵な文章は2月に発売予定の本書籍に掲載されます。そんなnoteとのコラボ企画ですが、大好評につきエッセイ募集期間を
+              7/12(金)に延長しました！期間延長の背景
+              6月のはじめから開始されたこの企画ですが、瞬く間に500件の投稿数を超え、その後も1,000、2,000と投稿数が増えていきました。  
+              おかげさまでnoteでのハッシュタグの数は6/24現在2400件を突破しました!たく...</p>
+          </div>
+        </div>
+        <div class="news-five">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/06/pickup2_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99-1.jpg")%>
+          <div class="detail-five">
+            <h2>noteコラボ企画「#旅とわたし」の投稿が2000件突破！！</h2>
+            <p>2019.6.21</p>
+            <p>noteとコラボして制作をしている旅のエッセイ本。「#旅とわたし」のハッシュタグをつけて投稿していただいてるのですが、
+              なんと2000投稿を突破しました！！！約１週間で1000投稿も増えていて、感激です！そして全て読ませていただいてます！！              
+              #旅とわたしのテーマがあるから、旅について書いてみようと振り返って文章にしてくれる人たちもたくさんいました。
+              自分の旅を改てどうだったなかなと考え直すことはあまりないと思います。旅中の出来事を思い出して嬉しくなったり、
+              あの時どう思ってたなぁと自分のことを知れた...</p>
+          </div>
+        </div>
+        <div class="news-six">
+          <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/06/pickup-02.jpg")%>
+          <div class="detail-six">
+            <h2>書籍応募の「#旅とわたし」エッセイ、素敵な文章をピックアップ！</h2>
+            <p>2019.6.10</p>
+            <p>TABIPPOで新たにつくる、旅のエッセイを集めた本。noteとコラボして、「#旅とわたし」のハッシュタグですでにたくさんの応募をいただいてます。
+                もうすぐ1000件を迎えるエッセイたち。全て読ませてもらっているんですが、旅は人それぞれだし、色んな解釈があって面白いなと楽しませてもらっています！               
+                そんなたくさんの旅のお話から、素敵だったエピソードをいくつかピックアップしました。
+                （書籍掲載とは関係ありません。TABIPPOメンバーがいいなと思ったものをご紹介しています。）               
+                ぜひ読んでほしい「#旅...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sns">
+      <ul class="sns-button">
+        <%= link_to root_path, class: "facebook-btn" do %>
+          <li class="facebook">
+              Share on Facebook
+          </li>
+        <% end %>
+        <%= link_to root_path, class: "twitter-btn" do %>
+          <li class="twitter">
+            Share on Twitter
+          </li>
+        <% end %>
+        <%= link_to root_path, class: "hatena-btn" do %>
+          <li class="hatena">
+            Hatena Bookmark
+          </li>
+        <% end %>
+      </ul>
+    </section>
+    <section class="information">
+      <ul class="information-category">
+        <li>TOP</li>
+        <li>PRODUCT</li>
+        <li>ABOUT</li>
+        <li>NEWS</li>
+        <li>CONTACT</li>
+      </ul>
+    </section>
+    <footer>
+      <div class="footer-div">
+        <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-small@2x.png")%>
+        <p>Copyright © 2019 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>  
+  </body>
+</html>

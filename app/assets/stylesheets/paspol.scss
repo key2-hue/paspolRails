@@ -1,0 +1,682 @@
+// Place all the styles related to the paspol controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* headerクラス */
+
+
+
+@media(max-width: 900px){
+  .header {
+    float:left;
+    width: 100vw;
+    position:relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .topZero{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+  }
+  
+  .topNone{
+    display: none;
+  }
+  
+  .header-show {
+    height: 45px;
+    background: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-image {
+    display: none;
+  }
+  
+  .header-none {
+    z-index: 1;
+    position:relative;
+    height: 280px;
+    color: white;
+    width: 100vw;
+  }
+  
+  .header-category > li {
+    height: 56px;
+    line-height: 56px;
+    padding-left: 40px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    /* text-align: center; */
+  }
+  
+  .header-list {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 100vw;
+  }
+  
+  .header-category > li:not(:last-child) {
+    border-bottom: 1px solid #fff;
+  }
+
+  .header-none {
+    display: none;
+  }
+  
+  .header-none > ul {
+    display: block;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  .header-show > p {
+    font-size: 12px;
+    margin-left: 45px;
+    letter-spacing: 1px;
+  }
+  
+  .header-show > i {
+    margin-right: 45px;
+  }
+}
+
+@media(min-width: 901px) {
+  .header {
+    float:left;
+    width: calc(100vw - 120px);
+    margin: 0 auto;
+    justify-content: space-between;
+    position:relative;
+    top: 60px;
+    left: 5%;
+    z-index: 1;
+    display: flex;
+  }
+  
+  .topZero{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+  }
+  
+  .topNone{
+    display: none;
+  }
+  
+  .header-show {
+    height: 45px;
+    background: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-none {
+    z-index: 1;
+    position:relative;
+    height: 280px;
+    color: white;
+  }
+
+  .header-image > img {
+    display: block;
+    width: 250px;
+  }
+
+  .header-category {
+    display: flex;
+    position: relative; 
+    right: 50px;
+  }
+  
+  .header-category > li {
+    height: 56px;
+    line-height: 56px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    width: 80px;
+    text-align: center;
+    padding-left:20px;
+    /* text-align: center; */
+  }
+  
+  .header-list {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 80px;
+    padding-left:20px;
+  }
+  
+  
+  .show {
+    display: block;
+  }
+  
+  .none {
+    display: none;
+  }
+
+  .header-show {
+    display: none;
+  }
+  
+  .header-show > p {
+    font-size: 12px;
+    margin-left: 45px;
+    letter-spacing: 1px;
+  }
+  
+  .header-show > i {
+    margin-right: 45px;
+  }
+}
+
+
+
+/* slick導入する, bootstrapハンバーガーメニュー導入する */
+/* mainクラス */
+
+@media(min-width: 901px) {
+  .brand > img:first-of-type {
+    display: none;
+  }
+}
+
+.main {
+  height: 740px;
+  background-image: url("https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_13-0x0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 300px 22px;
+  border-bottom-right-radius: 400px 20px;
+  position: relative;
+  width: 100vw;
+}
+
+.main::after {
+  content: '';
+  height: 695px;
+  background: #f6f6f6;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.brand > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.brand-first {
+  width: 200px;
+  position: absolute;
+  top: 250px;
+  margin: auto;
+  left:0;
+  right: 0;
+}
+
+.brand-second {
+  position: absolute;
+  top: 665px;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 22px;
+}
+
+/* conceptクラス */
+
+/*　ここからレスポンシブデザイン始める */
+
+@media (max-width: 700px){
+  .concept {
+    height: 900px;
+    background: #f6f6f6;
+    /* position: relative;
+    bottom: 20px; */
+    z-index: -1;
+  }
+  
+  .journey {
+    width: calc(100vw - 90px);
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+  }
+  
+  .journey > h2 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    // position: relative;
+    // left: 10px;
+  }
+  
+  .journey > p {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  
+  .journey > p:first-of-type {
+    margin-top: 50px;
+  }
+  
+  .journey > p:not(:first-of-type) {
+    padding-top: 15px;
+  }
+  
+  .journey > img {
+    display: block;
+    width: 200px;
+    margin: 20px 0;
+  }
+}
+
+@media(min-width: 701px) {
+  .concept {
+    height: 900px;
+    background: #f6f6f6;
+    /* position: relative;
+    bottom: 20px; */
+    z-index: -1;
+  }
+  
+  .journey {
+    width: 370px;
+    margin: 0 auto;
+    position: relative;
+    top: 130px;
+  }
+  
+  .journey > h2 {
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+  }
+  
+  .journey > p {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  
+  .journey > p:first-of-type {
+    margin-top: 50px;
+  }
+  
+  .journey > p:not(:first-of-type) {
+    padding-top: 15px;
+  }
+  
+  .journey > img {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+  }
+}
+
+
+/* productクラス */
+
+.product {
+  height: 2050px;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.product-left {
+  margin-left: 35px;
+}
+
+.product-left > p {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.product-left > img {
+  display: block;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.product-right {
+  border: 1px solid black;
+  width: 160px;
+  margin-right: 40px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.product-right:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product-right > p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.right-arrow {
+  position: relative;
+  left: 40px;
+  /* font-size: 20px; */
+}
+
+.product-main {
+  margin-top: 40px;
+}
+
+.product-main > div {
+  display: flex;
+  width: calc(100vw - 30px);
+  margin: 0 auto;
+}
+
+.product-main > div:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.book-one > img,
+.book-two > img,
+.book-three > img,
+.book-four > img,
+.book-five > img,
+.book-six > img {
+  display: block;
+  width: calc(100vw * 0.3);
+  margin-left: 20px;
+}
+
+.book-one > p,
+.book-two > p,
+.book-three > p,
+.book-four > p,
+.book-five > p,
+.book-six > p {
+  margin: 30px 0 0 25px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: calc(100vw - (100vw * 0.3 + 90px));
+}
+
+/* newsクラス */
+
+.news {
+  background: #f6f6f6;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.news-left {
+  margin-left: 35px;
+}
+
+.news-left > p {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.news-left > img {
+  display: block;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.news-right {
+  border: 1px solid black;
+  width: 160px;
+  margin-right: 40px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.news-right:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.news-right > p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.right-arrow {
+  position: relative;
+  left: 40px;
+  /* font-size: 20px; */
+}
+
+.news-main {
+  margin-top: 50px;
+  padding-bottom: 100px;
+  transition: 0.3s;
+}
+
+.news-main > div:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.news-one,
+.news-two,
+.news-three,
+.news-four,
+.news-five,
+.news-six {
+  display: flex;
+  width: calc(100vw - 20px);
+  margin: 60px auto 0;
+}
+
+.news-one > img,
+.news-two > img,
+.news-three > img,
+.news-four > img,
+.news-five > img,
+.news-six > img {
+  display: block;
+  width: calc(100vw * 0.35);
+  height: auto;
+  height: calc(100vw * 0.2);
+  margin-left: 25px;
+}
+
+.news-one > div,
+.news-two > div,
+.news-three > div,
+.news-four > div,
+.news-five > div,
+.news-six > div {
+  margin-left: 30px;
+  width: calc(100vw - (100vw * 0.35 + 90px));
+}
+
+.detail-one > h2,
+.detail-two > h2,
+.detail-three > h2,
+.detail-four > h2,
+.detail-five > h2,
+.detail-six > h2 {
+  font-size: 18px;
+  font-weight: bold;
+  width: calc(100vw - (100vw * 0.35 + 120px));
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+}
+
+
+
+.detail-one > p:first-of-type,
+.detail-two > p:first-of-type,
+.detail-three > p:first-of-type,
+.detail-four > p:first-of-type,
+.detail-five > p:first-of-type,
+.detail-six > p:first-of-type {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.detail-one > p:last-child,
+.detail-two > p:last-child,
+.detail-three > p:last-child,
+.detail-four > p:last-child,
+.detail-five > p:last-child,
+.detail-six > p:last-child {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  margin-top: 25px;
+}
+
+/* snsクラス */
+
+.sns {
+  height: 110px;
+}
+
+.sns-button {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  justify-content: center;
+}
+
+.facebook,
+.twitter,
+.hatena {
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  transition: 0.3s;
+}
+
+.facebook-btn,
+.twitter-btn,
+.hatena-btn{
+  text-decoration: none;
+  height: 40px;
+  padding: 10px;
+}
+
+.facebook {
+  color: #4871a9;
+  border: 1px solid #4871a9;
+}
+
+.twitter {
+  color: #70bdd3;
+  border: 1px solid #70bdd3;
+}
+
+.hatena {
+  color: #2f9bcd;
+  border: 1px solid #2f9bcd;
+}
+
+.facebook:hover,
+.twitter:hover,
+.hatena:hover {
+  color:#fff;
+  border-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.facebook:hover {
+  background: #4871a9;
+}
+
+.twitter:hover {
+  background: #70bdd3;
+}
+
+.hatena:hover {
+  background: #2f9bcd;
+}
+
+/* informationクラス */
+
+.information {
+  background: #939899;
+  height: 90px;
+}
+
+.information-category {
+ display: flex;
+ height: 90px;
+ align-items: center;
+ width: 450px;
+ margin: 0 auto;
+ justify-content: space-between;
+}
+
+.information-category > li {
+  color: white;
+  font-size: 15px;
+}
+
+/* footerクラス */
+
+footer {
+  background: #656c6e;
+  height: 160px;
+}
+
+.footer-div {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+  width: calc(100vw - 110px);
+  margin: 0 auto;
+}
+
+.footer-div > img {
+  display: block;
+  height: 90px;
+}
+
+.footer-div > p {
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
