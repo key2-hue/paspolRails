@@ -801,19 +801,19 @@
 @media(max-width: 500px) {
   .news {
     background: #f6f6f6;
+    padding-bottom: 70px;
   }
   
   .news-header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 100px;
+    padding-top: 70px;
   }
   
   .news-left {
-    margin-left: 35px;
+   margin: 0 auto;
   }
   
   .news-left > p {
+    text-align: center;
     font-size: 28px;
     letter-spacing: 2px;
   }
@@ -821,17 +821,11 @@
   .news-left > img {
     display: block;
     width: 70px;
-    margin-top: 10px;
+    margin: 10px auto 0;
   }
   
   .news-right {
-    border: 1px solid black;
-    width: 160px;
-    margin-right: 40px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    transition: 0.5s;
+    display: none;
   }
   
   .news-right:hover,
@@ -860,7 +854,7 @@
   
   .news-main {
     margin-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     transition: 0.3s;
   }
   
@@ -871,30 +865,28 @@
   }
   
   .news-topic {
-    display: flex;
-    width: calc(100vw - 20px);
-    margin: 60px auto 0;
+    // display: flex;
+    width: calc(100vw - 70px);
+    margin: 50px auto 0;
   }
   
   .news-topic > img {
     display: block;
-    width: calc(100vw * 0.35);
+    width: calc(100vw - 70px);
     height: auto;
-    height: calc(100vw * 0.2);
-    margin-left: 25px;
   }
   
   .news-topic > div {
-    margin-left: 30px;
-    width: calc(100vw - (100vw * 0.35 + 90px));
+    width: calc(100vw - 70px);
   }
   
   .details > h2 {
     font-size: 18px;
     font-weight: bold;
-    width: calc(100vw - (100vw * 0.35 + 120px));
-    letter-spacing: 1.5px;
+    width: calc(100vw - 80px);
+    letter-spacing: 2px;
     line-height: 1.7;
+    margin-top: 15px;
   }
   
   
@@ -905,15 +897,36 @@
   }
   
   .details > p:last-child {
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
-    margin-top: 25px;
-    width: calc(100vw - (100vw * 0.35 + 100px));
+    display: none;
   }
   
+
   .news-footer {
-    display: none;
+    border: 1px solid black;
+    width: 160px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .more-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .news-footer:hover,
+  .more-link:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .more-link > p {
+    font-size: 13px;
+    letter-spacing: 1px;
   }
 }
 
