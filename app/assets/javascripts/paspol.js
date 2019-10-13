@@ -13,4 +13,9 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 3000,
   });
+  var width = $(window).width();
+  var x = 900
+  if(width > x) {
+    $('.header-none *').removeAttr('style');
+  }
 });
