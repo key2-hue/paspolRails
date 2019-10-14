@@ -9,10 +9,6 @@ $(function(){
       // $('.main').css({'position':'relative', 'top': '200px' });
     }
   });
-  // $('.slider').slick({
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  // });
   $(window).resize(function(){
     var width = $(window).width();
     var x = 900
@@ -23,7 +19,10 @@ $(function(){
         $('.header-none').slideUp();
       },300)
     }
-});
+  });
   
+  $('.slider').slick({
+    autoplay: true,
+  });
 
 });
