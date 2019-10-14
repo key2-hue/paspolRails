@@ -21,8 +21,11 @@ $(function(){
     }
   });
   
-  $('.slider').slick({
+  $('.background').slick({
     autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: 'ease-in',
+    fade: true,
   });
 
 });
