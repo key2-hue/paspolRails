@@ -10,7 +10,7 @@ $(function(){
     }
   });
   var checkResize;
-  $(window).on(' load resize',function(){
+  $(window).on('resize',function(){
     clearTimeout(checkResize);
     checkResize = setTimeout( resizing, 100 );
   });
@@ -29,6 +29,7 @@ $(function(){
         $('.header-none').slideUp();
       },300)
       $('.header-category').removeAttr('style');
+      $('.header-category').css({'bottom':'50px','right': 0});
     }
   }
   
