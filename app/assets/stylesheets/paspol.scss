@@ -34,6 +34,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
   }
 
   .header-image {
@@ -46,6 +47,7 @@
     height: 280px;
     color: white;
     width: 100vw;
+    transition: 0.5s;
   }
   
   .header-category > li {
@@ -928,6 +930,8 @@
     font-size: 13px;
     letter-spacing: 1px;
   }
+
+  
 }
 
 
@@ -1387,6 +1391,20 @@
   .information-category > li:not(:last-of-type) {
     border-bottom: 1px solid #fff;
   }
+
+  
+  
+
+  .information-list {
+    display: block;
+    width: 100vw;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .information-list:hover {
+    opacity: 0.7;
+  }
 }
 
 @media(min-width: 581px) {
@@ -1407,6 +1425,15 @@
   .information-category > li {
     color: white;
     font-size: 15px;
+  }
+
+  .information-list {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .information-list:hover {
+    opacity: 0.7;
   }
 }
 
