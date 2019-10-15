@@ -53,30 +53,42 @@
     </div>
   </div>
   <div class="product-main">
-    <div class="book-one book">
-      <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/05/fes001t.png")%>
-      <p>The World Festival Guide -海外の音楽フェス完全ガイド-</p>
-    </div>
-    <div class="book-two book">
-      <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/11/banner_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB21.png")%>
-      <p>この世界で死ぬまでにしたいこと<span class="book-sm">2000</span></p>
-    </div>
-    <div class="book-three book">
-      <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/09/365%E6%97%A5%E6%9C%AC%E3%82%AB%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%BC_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB1.png")%>
-      <p>365日 日本一周 絶景日めくりカレンダー</p>
-    </div>
-    <div class="book-four book">
-      <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/05/passportnotebook-thumb11.png")%>
-      <p>PASSPORT NOTEBOOK series</p>
-    </div>
-    <div class="book-five book">
-      <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/02/englishbook-thumb11.png")%>
-      <p>ひとり旅英会話BOOK</p>
-    </div>
-    <div class="book-six book">
-      <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2016/12/212465b615e458e672a9e0a1cbb1acf1.png")%>
-      <p>日本の絶景ポストカード 春編</p>
-    </div>
+    <%= link_to "https://pas-pol.jp/product/world-festival-guide/", class:"product-book" do%>
+      <div class="book-one book">
+        <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2019/05/fes001t.png")%>
+        <p>The World Festival Guide -海外の音楽フェス完全ガイド-</p>
+      </div>
+    <% end %>
+    <%= link_to "https://pas-pol.jp/product/2000book/", class:"product-book" do %>
+      <div class="book-two book">
+        <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/11/banner_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB21.png")%>
+        <p>この世界で死ぬまでにしたいこと<span class="book-sm">2000</span></p>
+      </div>
+    <% end %>
+    <%= link_to "https://pas-pol.jp/product/365calendar-japan/", class:"product-book" do%>
+      <div class="book-three book">
+        <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/09/365%E6%97%A5%E6%9C%AC%E3%82%AB%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%BC_%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB1.png")%>
+        <p>365日 日本一周 絶景日めくりカレンダー</p>
+      </div>
+    <% end %>
+    <%= link_to "https://pas-pol.jp/product/passport-notebook-series/", class:"product-book" do%>
+      <div class="book-four book">
+        <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/05/passportnotebook-thumb11.png")%>
+        <p>PASSPORT NOTEBOOK series</p>
+      </div>
+    <% end %>
+    <%= link_to "https://pas-pol.jp/product/solo-travelenglish/", class:"product-book" do%>
+      <div class="book-five book">
+        <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2018/02/englishbook-thumb11.png")%>
+        <p>ひとり旅英会話BOOK</p>
+      </div>
+    <% end %>
+    <%= link_to "https://pas-pol.jp/product/pc_spring-season/", class: "product-book" do%>
+      <div class="book-six book">
+        <%= image_tag("https://s3-ap-northeast-1.amazonaws.com/paspol-images/wp-content/uploads/2016/12/212465b615e458e672a9e0a1cbb1acf1.png")%>
+        <p>日本の絶景ポストカード 春編</p>
+      </div>
+    <% end %>
   </div>
   <div class="product-footer">
     <%= link_to "https://pas-pol.jp/products/", class:"product-link" do %>
