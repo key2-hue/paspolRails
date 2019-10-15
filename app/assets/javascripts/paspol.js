@@ -21,7 +21,7 @@ $(function(){
       $('.header-none').attr('style', 'display: block;');
       $('.header-none').css({'display':'block'});
       $('.header-category').animate({
-       'right': '50px',
+       'right': '30px',
        'bottom': 0
       });
     } else {
@@ -36,8 +36,21 @@ $(function(){
   $('.background').slick({
     autoplay: true,
     autoplaySpeed: 4000,
+    arrows: false,
     cssEase: 'ease-in',
     fade: true,
   });
+
+  $('.main').vegas({
+    slides: [
+      {src: "https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_13-0x0.jpg"},
+      {src: "https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_2-0x0.jpg"},
+      {src: "https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_6-0x0.jpg"},
+      {src: "https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_7-0x0.jpg"},
+      {src: "https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_111-0x0.jpg"}
+    ],
+    loop: true,
+    timer: false
+  })
 
 });

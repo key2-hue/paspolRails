@@ -1,15 +1,15 @@
 
 <div class="header">
   <div class="header-image">
-    <%= image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-pc@2x.png") %>
+    <%= link_to image_tag("https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-pc@2x.png",class:"header-imageInside"),"https://pas-pol.jp/" %>
   </div> 
   <div class="header-none">
     <ul class="header-category">
-      <li><%= link_to("TOP", "https://pas-pol.jp/", class: "header-list") %></li>
-      <li><%= link_to("PRODUCT", "https://pas-pol.jp/products/", class: "header-list") %></li>
-      <li><%= link_to("ABOUT", "https://pas-pol.jp/about/", class: "header-list") %></li>
-      <li><%= link_to("NEWS", "https://pas-pol.jp/news/", class: "header-list") %></li>
-      <li><%= link_to("CONTACT", "https://pas-pol.jp/contact/", class: "header-list") %></li>
+      <li><%= link_to("TOP", "https://pas-pol.jp/", class: "header-list header-top") %></li>
+      <li><%= link_to("PRODUCT", "https://pas-pol.jp/products/", class: "header-list header-product") %></li>
+      <li><%= link_to("ABOUT", "https://pas-pol.jp/about/", class: "header-list header-about") %></li>
+      <li><%= link_to("NEWS", "https://pas-pol.jp/news/", class: "header-list header-news") %></li>
+      <li><%= link_to("CONTACT", "https://pas-pol.jp/contact/", class: "header-list header-contact") %></li>
     </ul>
   </div>
   <div class="header-show">
@@ -17,7 +17,7 @@
     <i class="fas fa-bars"></i>
   </div>
 </div>
-<section class="main" stle="height: 0;">
+<section class="main">
   <%# <div class="background">
     <img src="https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_13-0x0.jpg">
     <img src="https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_2-0x0.jpg">
@@ -217,6 +217,9 @@
     <p>Copyright © 2019 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</p>
   </div>
 </footer>
-    
+  <%# <div class="background" style="width: 100vw;">
+    <img src="https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_13-0x0.jpg">
+    <img src="https://pas-pol.jp/wp-content/uploads/2014/11/main_visual_2-0x0.jpg">
+  </div> %>
   </body>
 </html>
